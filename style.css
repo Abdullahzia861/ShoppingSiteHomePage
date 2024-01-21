@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+    margin: 0;
+    padding-bottom: 60px; /* Adjust the padding to match the height of the fixed navigation bar */
+}
+
+/* button */
+.btn {
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: rgb(28, 223, 54);
+    color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+    font-size: 32px;
+}
+
+/* tophead */
+.container {
+    padding: 5px;
+}
+
+.heading {
+    width: 100%;
+    padding: 2px 0px 15px 0px;
+    background-color: black;
+}
+
+.innerhead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(214, 73, 73);
+    width: 100%;
+    padding: 5px;
+    color: white;
+    height: 50px;
+}
+
+/* mainimg */
+.content {
+    width: 100%;
+    height: 100vh;
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.links {
+    background-color: rgba(187, 183, 183, 0.74);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.links table {
+    border-collapse: separate;
+}
+
+.links table td {
+    text-align: center;
+    padding: 10px 20px; /* Adjust for smaller screens */
+}
+
+.links table td a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* footer */
+.heading2 {
+    width: 100%;
+}
+
+.innerhead2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(214, 73, 73);
+    width: 100%;
+    padding: 5px;
+    color: white;
+    height: 50px;
+}
+
+.footnav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 100;
+}
+
+.footnav nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footnav nav ul li {
+    display: flex;
+    margin-right: 20px; /* Adjust for smaller screens */
+}
+
+.footnav nav ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    .links table td {
+        padding: 10px; /* Adjust for smaller screens */
+    }
+
+    .footnav nav ul li {
+        margin-right: 10px; /* Adjust for smaller screens */
+    }
+}
